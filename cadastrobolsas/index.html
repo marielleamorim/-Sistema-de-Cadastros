@@ -1,0 +1,81 @@
+<!-- Adaptação do arquivo index.html (5 pontos) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>JavaScript - DOM - Prática da Semana 03</title>
+</head>
+
+<body class="p-3 m-0 border-0">
+
+  <h1 class="text-center">Sistema de Cadastro de Bolsas</h1>
+  <hr>
+
+  <form name="form1" action="#" method="POST" class="row g-3 needs-validation" novalidate>
+    <div class="input-group">
+      <div class="col-md-6">
+        <label for="tipo" class="form-label">Tipo</label>
+        <input type="text" class="form-control" id="tipo" placeholder="Bolsa de praia" required>
+        <div id="feedbackTipo" class="invalid-feedback">Informe o tipo do produto corretamente.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="estilo" class="form-label">Estilo</label>
+        <input type="text" class="form-control" id="estilo" placeholder="Elegante" required>
+        <div class="invalid-feedback">Informe o estilo corretamente.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="valor" class="form-label">Valor</label>
+        <input type="text" class="form-control" id="valor" placeholder="0,00" required>
+        <div class="invalid-feedback">Informe valor corretamente.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="tamanho" class="form-label">Tamanho</label>
+        <input type="text" class="form-control" id="tamanho" placeholder="Grande" required>
+        <div id="feedback" class=" invalid-feedback">Informe o tamanho corretamente.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="cor" class="form-label">Cor</label>
+        <input type="text" class="form-control" id="cor" placeholder="Rosa" required>
+        <div class="invalid-feedback">Informe a cor corretamente.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="Estampa" class="form-label">Estampa</label>
+        <input type="text" class="form-control" id="estampa" placeholder="Flamingo" required>
+        <div class="invalid-feedback">Informe estampa corretamente.</div>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <input type="submit" class="btn btn-primary me-md-2" value="Inserir" id="btnInserir">
+    </div>
+  </form>
+
+  <hr>
+
+  <table class="table table-striped" id="tabela">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Estilo</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Tamanho</th>
+        <th scope="col">Cor</th>
+        <th scope="col">Estampa</th>
+        <th scope="col">Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>
